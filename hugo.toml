@@ -7,7 +7,7 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "disqus_zaamFuPFsY"
+disqusShortname = "billjhzhang"
 
 pagination.pagerSize=3 # articles per page
 
@@ -65,6 +65,3 @@ name = "Tags"
 url = "/tags"
 weight = 4
 
-[services]
-  [services.disqus]
-    shortname = 'disqus_zaamFuPFsY'
