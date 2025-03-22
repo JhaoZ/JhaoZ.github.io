@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://athul.github.io/archie/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://athul.github.io/archie/about/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://athul.github.io/archie/posts/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
@@ -28,9 +31,6 @@
   </url><url>
     <loc>https://athul.github.io/archie/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://athul.github.io/archie/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://athul.github.io/archie/posts/post-7/</loc>
     <lastmod>2018-03-18T12:13:38+05:30</lastmod>

@@ -11,6 +11,11 @@
 					<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
 					{{- end -}}
 				</div>
+				<div>
+					{{- if isset .Site.Params "subsubtitle" -}}
+					<p>{{ .Site.Params.subsubtitle | .Page.RenderString }}</p>
+					{{- end -}}
+				</div>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}

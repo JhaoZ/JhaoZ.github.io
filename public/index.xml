@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archie</title>
+    <title>Bill Zhang</title>
     <link>https://athul.github.io/archie/</link>
-    <description>Recent content on Archie</description>
+    <description>Recent content on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://athul.github.io/archie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://athul.github.io/archie/about/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://athul.github.io/archie/about/</guid>
+      <description>&lt;p&gt;Hi! My name is Bill Zhang! As mentioned on my home page, I am currently a senior at the University of Illinois Urbana-Champaign (UIUC) studying &lt;a href=&#34;https://siebelschool.illinois.edu/academics/undergraduate/degree-program-options/bs-statistics-computer-science&#34;&gt;Statistics &amp;amp; CS&lt;/a&gt;, a single blended degree where I take the core classes from both the Statistics sequence and the Computer Science sequence&amp;ndash;still leaving left over time to take whatever electives I want in either field.&lt;/p&gt;&#xA;&lt;p&gt;Throughout my years of colleges, I gained experience in multiple disciplines of computing. Right now, I have the most experience in AI/ML, systems, and backend, but theres many other fields I want to explore. I am quite interested in anything scalable&amp;ndash;especially if its for AI/ML. Another one of my interests is writing code for low-latency or big data applications, such as high frequency trading. Currently, I&amp;rsquo;m still exploring what I &lt;em&gt;really&lt;/em&gt; want to do.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Telegram Bot for  GitHub Actions</title>
       <link>https://athul.github.io/archie/posts/tg-gh/</link>
@@ -36,13 +43,6 @@
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       <guid>https://athul.github.io/archie/archives/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://athul.github.io/archie/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/about/</guid>
-      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;&#xA;&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to test dark mode?</title>
