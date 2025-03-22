@@ -2,18 +2,19 @@ baseURL = "https://athul.github.io/archie/"
 languageCode = "en-us"
 title = "Bill Zhang"
 theme="archie"
-copyright = "© Athul"
 # Code Highlight
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+
+disqusShortname = "disqus_zaamFuPFsY"
 
 pagination.pagerSize=3 # articles per page
 
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Welcome to my personal website & blog! A basic rundown: I'm current a [Statistics & CS](https://siebelschool.illinois.edu/academics/undergraduate/degree-program-options/bs-statistics-computer-science) senior at the University of Illinois Urbana-Champaign (UIUC), I'm passionate about doing *cool* things with computer science. To learn more about my experiences, go to [About Me](about)."
+	subtitle = "Welcome to my personal website & blog! A basic rundown: I'm currently a [Statistics & CS](https://siebelschool.illinois.edu/academics/undergraduate/degree-program-options/bs-statistics-computer-science) senior at the University of Illinois Urbana-Champaign (UIUC), I'm passionate about doing *cool* things with computer science. To learn more about my experiences, go to [About Me](about)."
     subsubtitle = "This website is pretty empty right now (with some fake blog posts). More to come soon!"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
@@ -63,3 +64,7 @@ weight = 3
 name = "Tags"
 url = "/tags"
 weight = 4
+
+[services]
+  [services.disqus]
+    shortname = 'disqus_zaamFuPFsY'
