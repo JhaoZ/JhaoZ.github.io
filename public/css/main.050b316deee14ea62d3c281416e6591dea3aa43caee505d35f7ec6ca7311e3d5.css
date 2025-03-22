@@ -407,12 +407,7 @@ table td{
 
 #identity-section {
   font-size: 1rem;
-  font-family: 'Roboto Mono', monospace;
-  min-height: 4ch; 
-}
-
-#identity-section p {
-  font-family: 'Roboto Mono', monospace;
+  font-family: Consolas, 'Courier New', monospace;
 }
 
 #typed-output {

@@ -411,10 +411,6 @@ table td{
   min-height: 4ch; 
 }
 
-#identity-section p {
-  font-family: 'Roboto Mono', monospace;
-}
-
 #typed-output {
   display: inline-block;
   white-space: nowrap;

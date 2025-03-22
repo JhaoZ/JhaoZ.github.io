@@ -406,13 +406,12 @@ table td{
 }
 
 #identity-section {
-  font-size: 1rem;
-  font-family: 'Roboto Mono', monospace;
-  min-height: 4ch; 
-}
-
-#identity-section p {
-  font-family: 'Roboto Mono', monospace;
+  background-color: #1e1e1e;
+  color: #00ff88;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: Consolas, 'Courier New', monospace;
+  display: inline-block;
 }
 
 #typed-output {

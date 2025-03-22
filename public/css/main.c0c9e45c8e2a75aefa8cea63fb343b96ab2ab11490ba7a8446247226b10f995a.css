@@ -411,8 +411,10 @@ table td{
   min-height: 4ch; 
 }
 
-#identity-section p {
+#identity-section {
+  font-size: 1rem;
   font-family: 'Roboto Mono', monospace;
+  min-height: 4ch; 
 }
 
 #typed-output {

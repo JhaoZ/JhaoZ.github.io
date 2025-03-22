@@ -273,14 +273,10 @@ article .title {
 }
 
 .site-description {
+  margin-top: 0;
 display: flex;
 justify-content: space-between;
 }
-
-.site-description p{
-  margin-top: 0;
-}
-
 .tags li::before{
   content: "🏷 ";
 }
@@ -406,13 +402,9 @@ table td{
 }
 
 #identity-section {
-  font-size: 1rem;
-  font-family: 'Roboto Mono', monospace;
-  min-height: 4ch; 
-}
-
-#identity-section p {
-  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 1rem; 
+  font-family: 'Courier New', monospace;
 }
 
 #typed-output {

@@ -18,6 +18,7 @@ pagination.pagerSize=3 # articles per page
     subsubtitle = "This website is pretty empty right now (with some fake blog posts). More to come soon!"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
+    identityList = ["programmer", "student", "photographer"]
 
 # Social Tags
 

@@ -415,6 +415,11 @@ table td{
   font-family: 'Roboto Mono', monospace;
 }
 
+#typed-identity p {
+  color: #50fa7b;
+}
+
+
 #typed-output {
   display: inline-block;
   white-space: nowrap;

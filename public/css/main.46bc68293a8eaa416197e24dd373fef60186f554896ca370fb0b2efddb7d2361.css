@@ -413,7 +413,9 @@ table td{
 
 #identity-section p {
   font-family: 'Roboto Mono', monospace;
+  color: #50fa7b;
 }
+
 
 #typed-output {
   display: inline-block;

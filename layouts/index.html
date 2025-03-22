@@ -4,8 +4,10 @@
 	<body>
 		<div class="content">
 			{{ partial "head.html" . }}
-			
 			<main class="list">
+				<div id="identity-section">
+					<p><span id="typed-output" style="font-weight:bold;"></span><span class="cursor">|</span></p>
+				</div>
 				<div class="site-description">
 					{{- if isset .Site.Params "subtitle" -}}
 					<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
@@ -30,6 +32,9 @@
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
-		
+		<script>
+			const identities = JSON.parse("{{ .Site.Params.identityList | jsonify }}");
+		  </script>
+		<script src={{absURL "js/mytyping.js"}}></script>
 	</body>
 </html>
