@@ -47,7 +47,9 @@
     {{ end }}
 
     {{- if eq ($.Scratch.Get "isDisqus") true -}}
+    {{ if and (not .Params.disable_comments)}}
     {{- partial "disqus.html" . -}}
+    {{ end }}
     {{- end -}}
   </article>
 </main>

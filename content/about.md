@@ -4,6 +4,7 @@ description = "So, who am I?"
 date = "2025-03-22"
 aliases = ["about-me"]
 author = "Bill Zhang"
+disable_comments = true
 +++
 
 ## Tl;dr: 
