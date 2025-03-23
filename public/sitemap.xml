@@ -2,60 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://athul.github.io/archie/</loc>
+    <loc>http://localhost:1313/archie/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/about/</loc>
+    <loc>http://localhost:1313/archie/about/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-test/</loc>
+    <loc>http://localhost:1313/archie/posts/post-test/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/</loc>
+    <loc>http://localhost:1313/archie/posts/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/tg-gh/</loc>
+    <loc>http://localhost:1313/archie/posts/tg-gh/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/tags/primer/</loc>
+    <loc>http://localhost:1313/archie/tags/primer/</loc>
     <lastmod>2020-04-01T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-1/</loc>
+    <loc>http://localhost:1313/archie/posts/post-1/</loc>
     <lastmod>2020-04-01T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/tags/</loc>
+    <loc>http://localhost:1313/archie/tags/</loc>
     <lastmod>2020-04-01T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/tags/todo/</loc>
+    <loc>http://localhost:1313/archie/tags/todo/</loc>
     <lastmod>2020-04-01T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-4/</loc>
+    <loc>http://localhost:1313/archie/posts/post-4/</loc>
     <lastmod>2020-03-18T12:13:35+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/archives/</loc>
+    <loc>http://localhost:1313/archie/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-7/</loc>
+    <loc>http://localhost:1313/archie/posts/post-7/</loc>
     <lastmod>2018-03-18T12:13:38+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-5/</loc>
+    <loc>http://localhost:1313/archie/posts/post-5/</loc>
     <lastmod>2018-03-18T12:13:38+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-6/</loc>
+    <loc>http://localhost:1313/archie/posts/post-6/</loc>
     <lastmod>2018-03-18T12:13:36+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-3/</loc>
+    <loc>http://localhost:1313/archie/posts/post-3/</loc>
     <lastmod>2018-03-18T12:13:32+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/tags/procrastinating/</loc>
+    <loc>http://localhost:1313/archie/tags/procrastinating/</loc>
     <lastmod>2018-03-18T12:13:32+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/posts/post-2/</loc>
+    <loc>http://localhost:1313/archie/posts/post-2/</loc>
     <lastmod>2018-03-18T12:13:30+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/tags/space/</loc>
+    <loc>http://localhost:1313/archie/tags/space/</loc>
     <lastmod>2018-03-18T12:13:30+05:30</lastmod>
   </url><url>
-    <loc>https://athul.github.io/archie/categories/</loc>
+    <loc>http://localhost:1313/archie/categories/</loc>
   </url>
 </urlset>

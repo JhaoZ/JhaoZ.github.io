@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head lang="en">
+<html><head lang="en"><script src="/archie/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=archie/livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Telegram Bot for  GitHub Actions - Bill Zhang</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Make a Telegram bot with Node.js and use it with GitHub Actions for sending notifications to you about the repo." />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="https://athul.github.io/archie/posts/tg-gh/">
+	<meta property="og:url" content="http://localhost:1313/archie/posts/tg-gh/">
   <meta property="og:site_name" content="Bill Zhang">
   <meta property="og:title" content="Telegram Bot for  GitHub Actions">
   <meta property="og:description" content="Make a Telegram bot with Node.js and use it with GitHub Actions for sending notifications to you about the repo.">
@@ -18,13 +18,13 @@
   <meta name="twitter:title" content="Telegram Bot for  GitHub Actions">
   <meta name="twitter:description" content="Make a Telegram bot with Node.js and use it with GitHub Actions for sending notifications to you about the repo.">
 
-        <link href="https://athul.github.io/archie/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+        <link href="http://localhost:1313/archie/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://athul.github.io/archie/css/main.41065464218cc25147c9f10012490a22711d2082e3888c7ae5cd81d866346023.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://athul.github.io/archie/css/dark.a6ecc2a65313cfac5f20a92af993901cecda7fc68011af46a4c24abe67a922f7.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
-		src="https://athul.github.io/archie/js/MathJax.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/archie/css/main.41065464218cc25147c9f10012490a22711d2082e3888c7ae5cd81d866346023.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/archie/css/dark.a6ecc2a65313cfac5f20a92af993901cecda7fc68011af46a4c24abe67a922f7.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
+		src="http://localhost:1313/archie/js/MathJax.js"></script>
 		
 		<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -38,9 +38,9 @@
 						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
 			}
 		});
-		</script><link rel="stylesheet" href="https://athul.github.io/archie/katex/katex.min.css ">
-		<script defer src="https://athul.github.io/archie/katex/katex.min.js"></script>
-		<script defer src="https://athul.github.io/archie/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		</script><link rel="stylesheet" href="http://localhost:1313/archie/katex/katex.min.css ">
+		<script defer src="http://localhost:1313/archie/katex/katex.min.js"></script>
+		<script defer src="http://localhost:1313/archie/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
@@ -56,7 +56,7 @@
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="https://athul.github.io/">Bill Zhang</a>
+		<a href="http://localhost:1313/">Bill Zhang</a>
 	</div>
 	<nav>
 		
@@ -142,7 +142,9 @@
 </ul>
 <h2 id="making-the-bot">Making the Bot</h2>
 <p>We need to get an API bot token from telegram. For that Go to Telegram and Search for <code>Botfather</code>. It&rsquo;s a bot.
-<img src="/archie/bfather.png" alt="" loading="lazy" />
+
+
+<img src="/archie/bfather.png" alt="" title="" loading="lazy" />
 
 Create a new bot with the <code>/newbot</code> command and get the API key. We&rsquo;ll need that, also talk to <code>jsondump</code> bot and get your chat id. The output may be like this, so</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
@@ -167,7 +169,9 @@ Create a new bot with the <code>/newbot</code> command and get the API key. We&r
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>This will be needed for further use and We need to add it to the repo secrets which can be found in the repo settings. Be careful to add it as <code>token</code> and <code>chat</code> like as shown below
-<img src="/archie/scr.png" alt="" loading="lazy" />
+
+
+<img src="/archie/scr.png" alt="" title="" loading="lazy" />
 </p>
 <h3 id="writing-the-action-and-building-the-bot">Writing the Action and Building the Bot</h3>
 <p>Fire up the terminal/cmd and make a new folder. Install the dependencies. Run the following command</p>
@@ -480,8 +484,6 @@ Create a new bot with the <code>/newbot</code> command and get the API key. We&r
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
-
-
 
 </div>
     </body>

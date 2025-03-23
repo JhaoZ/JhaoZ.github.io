@@ -1,10 +1,13 @@
+{{- $isLocal := eq .Site.BaseURL "http://localhost:1313/archie/" }}
+
 <div class="image-gallery">
   {{- range .Params }}
     {{- $parts := split . "::" }}
     {{- $src := index $parts 0 }}
     {{- $alt := index $parts 1 }}
+    {{- $prefix := cond $isLocal "/archie/" "/" }}
     <div class="image-wrapper">
-      <img src="/archie/{{ $src }}" alt="{{ $alt }}" title="{{ $alt }}"  data-caption="{{ $alt }}">
+      <img src="{{ printf "%s%s" $prefix $src }}" alt="{{ $alt }}" title="{{ $alt }}" data-caption="{{ $alt }}">
     </div>
   {{- end }}
 </div>

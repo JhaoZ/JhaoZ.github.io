@@ -1,1 +1,4 @@
-<img src="/archie/{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" />
+{{- $isLocal := eq site.BaseURL "http://localhost:1313/archie/" }}
+{{- $prefix := cond $isLocal "/archie/" "/" }}
+
+<img src="{{ printf "%s%s" $prefix (.Destination | safeURL) }}" alt="{{ .Text }}" title="{{ .Text }}" loading="lazy" />

@@ -14,6 +14,8 @@ Trying out gallery mode to see if it looks nice:
   "images/test/middlefork_4.jpg::Lakeside"
 >}}
 
+Non-gallery image:
 
+![img](images/test/middlefork_4.jpg)
 
 Cool!
