@@ -22,7 +22,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://athul.github.io/archie/css/main.be6085f26269de2026229419135f2bcd5e8733b52718aa3f5e92f04efdf780cd.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://athul.github.io/archie/css/main.41065464218cc25147c9f10012490a22711d2082e3888c7ae5cd81d866346023.css" />
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://athul.github.io/archie/css/dark.a6ecc2a65313cfac5f20a92af993901cecda7fc68011af46a4c24abe67a922f7.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
 		src="https://athul.github.io/archie/js/MathJax.js"></script>
 		
@@ -142,7 +142,8 @@
 </ul>
 <h2 id="making-the-bot">Making the Bot</h2>
 <p>We need to get an API bot token from telegram. For that Go to Telegram and Search for <code>Botfather</code>. It&rsquo;s a bot.
-<img src="bfather.png" alt="">
+<img src="/archie/bfather.png" alt="" loading="lazy" />
+
 Create a new bot with the <code>/newbot</code> command and get the API key. We&rsquo;ll need that, also talk to <code>jsondump</code> bot and get your chat id. The output may be like this, so</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;update_id&#34;</span>: <span style="color:#ae81ff">143943779</span>,
@@ -166,7 +167,8 @@ Create a new bot with the <code>/newbot</code> command and get the API key. We&r
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>This will be needed for further use and We need to add it to the repo secrets which can be found in the repo settings. Be careful to add it as <code>token</code> and <code>chat</code> like as shown below
-<img src="scr.png" alt=""></p>
+<img src="/archie/scr.png" alt="" loading="lazy" />
+</p>
 <h3 id="writing-the-action-and-building-the-bot">Writing the Action and Building the Bot</h3>
 <p>Fire up the terminal/cmd and make a new folder. Install the dependencies. Run the following command</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ touch index.js action.yml

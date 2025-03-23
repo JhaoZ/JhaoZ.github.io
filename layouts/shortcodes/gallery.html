@@ -1,0 +1,11 @@
+<div class="image-gallery">
+  {{- range .Params }}
+    {{- $parts := split . "::" }}
+    {{- $src := index $parts 0 }}
+    {{- $alt := index $parts 1 }}
+    <div class="image-wrapper">
+      <img src="/archie/{{ $src }}" alt="{{ $alt }}" title="{{ $alt }}"  data-caption="{{ $alt }}">
+    </div>
+  {{- end }}
+</div>
+<script src={{absURL "js/lightbox.js"}}></script>

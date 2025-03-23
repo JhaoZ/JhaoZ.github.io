@@ -486,11 +486,10 @@ table td{
 
 .lightbox-image {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 90%;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
-
 
 .lightbox-close {
   position: absolute;
