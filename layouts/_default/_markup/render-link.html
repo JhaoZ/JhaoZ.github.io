@@ -1,5 +1,4 @@
-{{- $isLocal := eq site.BaseURL "http://localhost:1313/archie/" }}
-{{- $prefix := cond $isLocal "/archie/" "/" }}
-<a href="{{ printf "%s%s" $prefix (.Destination | safeURL) }}" title="{{ .Title }}">
-  {{ .Text | safeHTML }}
-</a>
+{{- $isLocal := eq site.BaseURL "http://localhost:1313/archie/" -}}
+{{- $destination := .Destination | safeURL -}}
+{{- $isExternal := or (hasPrefix $destination "http://") (hasPrefix $destination "https://") (hasPrefix $destination "www.") -}}
+{{- $prefix := cond $isLocal "/archie/" "" -}}<a href="{{ if $isExternal }}{{ $destination }}{{ else }}{{ printf "%s%s" $prefix $destination }}{{ end }}" title="{{ .Title }}"{{ if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }}>{{- .Text | safeHTML -}}</a>

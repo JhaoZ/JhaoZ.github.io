@@ -1,4 +1,15 @@
 {{- $isLocal := eq site.BaseURL "http://localhost:1313/archie/" }}
-{{- $prefix := cond $isLocal "/archie/" "/" }}
+{{- $destination := .Destination | safeURL }}
+{{- $isExternal := or
+    (hasPrefix $destination "http://")
+    (hasPrefix $destination "https://")
+    (hasPrefix $destination "www.")
+    (hasPrefix $destination "//") }}
+{{- $prefix := cond (and $isLocal (not $isExternal)) "/archie/" "" }}
 
-<img src="{{ printf "%s%s" $prefix (.Destination | safeURL) }}" alt="{{ .Text }}" title="{{ .Text }}" loading="lazy" />
+<img
+  src="{{ printf "%s%s" (cond (hasPrefix $destination "www.") "https://" "") (printf "%s%s" $prefix $destination) }}"
+  alt="{{ .Text }}"
+  title="{{ .Text }}"
+  loading="lazy"
+/>

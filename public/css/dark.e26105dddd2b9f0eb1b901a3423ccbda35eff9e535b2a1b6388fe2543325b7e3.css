@@ -19,8 +19,8 @@ hr {
   border-top: 3px dotted blue;
 }
 code {
-  background-color: rgb(100, 100, 100);
-  color: rgb(255, 255, 255);
+  background-color: rgb(70, 70, 70);
+  color: black;
   text-decoration: bold;
   padding: 0.1em 0.2em;
 }

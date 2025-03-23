@@ -40,7 +40,7 @@ url = "mailto:billjz2@illinois.edu"
 [[params.social]]
 name = "Resume"
 icon = "file"
-url = ""
+url = "documents/Bill_Zhang_Resume.pdf"
 
 
 
@@ -65,3 +65,11 @@ weight = 3
 name = "Tags"
 url = "/tags"
 weight = 4
+
+[security]
+  enableInlineShortcodes = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

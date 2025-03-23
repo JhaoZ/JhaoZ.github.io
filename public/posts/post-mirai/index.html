@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Building MirAI (HackIllinois 2025) - Bill Zhang</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="And the pains of prompt engineering" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://athul.github.io/archie/posts/post-mirai/">
+  <meta property="og:site_name" content="Bill Zhang">
+  <meta property="og:title" content="Building MirAI (HackIllinois 2025)">
+  <meta property="og:description" content="And the pains of prompt engineering">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-23T00:00:00+00:00">
+    <meta property="article:tag" content="Dev">
+    <meta property="article:tag" content="Llm">
+    <meta property="article:tag" content="Hackathon">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Building MirAI (HackIllinois 2025)">
+  <meta name="twitter:description" content="And the pains of prompt engineering">
+
+        <link href="https://athul.github.io/archie/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://athul.github.io/archie/css/main.41065464218cc25147c9f10012490a22711d2082e3888c7ae5cd81d866346023.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://athul.github.io/archie/css/dark.4c2778b0007a4d1d5e8748e840e2f411c77d5926e2a857c591c4221321cc9cdb.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
+		src="https://athul.github.io/archie/js/MathJax.js"></script>
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script><link rel="stylesheet" href="https://athul.github.io/archie/katex/katex.min.css ">
+		<script defer src="https://athul.github.io/archie/katex/katex.min.js"></script>
+		<script defer src="https://athul.github.io/archie/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+		</script>
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://athul.github.io/">Bill Zhang</a>
+	</div>
+	<nav>
+		
+		<a href="/archie/">Home</a>
+		
+		<a href="/archie/posts">All posts</a>
+		
+		<a href="/archie/about">About Me</a>
+		
+		<a href="/archie/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Building MirAI (HackIllinois 2025)</h1>
+          <div class="meta">Posted on Mar 23, 2025</div>
+        </div>
+        
+        <section class="body">
+          <p>I mentioned before on this website that I wanted to keep a record of the projects I&rsquo;ve done. Not only can I eventually look back and see what progess I&rsquo;ve made as a developer (&ldquo;wow, I used to write <em>really</em> bad code&rdquo;), but I also want to be able to read this and get up to speed with the project in case I ever want to work on it again. I don&rsquo;t really keep documentation of my projects (bad practice, I know), so this will come in handy for me.</p>
+<p>Today, I&rsquo;ll be explaining how me and my team build MirAI during HackIllinois 2025, a 36 hour hackathon at UIUC.</p>
+
+
+<div class="image-wrapper">
+  <img 
+    src="/images/mirai/mirai_1.png" 
+    alt="MirAI logo" 
+    title="The logo I made for the project" 
+    data-caption="The logo I made for the project" 
+    class="lightbox-enabled" 
+    style="cursor: zoom-in;" 
+    loading="lazy"
+  >
+</div>
+
+<h2 id="what-is-mirai">What is MirAI?</h2>
+<p>MirAI is an AI-powered jira/task board (read: gpt wrapper) that can take an idea, generate tickets for it, host virtual stand up, and then modify the task board and track progress. The name MirAI comes from the japanese word Mirai 未来, meaning future. We could&rsquo;ve also went with the same word but in Chinese, which is WeiLai 未来 (spelled the same in both languages), but I already knew a company called <a href="https://en.wikipedia.org/wiki/Nio_Inc." title="" target="_blank" rel="noopener noreferrer">WeiLai</a>
+ so I didn&rsquo;t want to use the same word.</p>
+<p>We chose this project because we wanted to submit a project under the &ldquo;Dev Tool&rdquo; track (we thought we had the best chance of winning under this track).</p>
+<h2 id="features-mvp">Features (MVP)</h2>
+<p>We had a set of features we <em>needed</em> to complete before time was up (the minimum viable product MVP), and the features are as follows:</p>
+<ul>
+<li>The MVP should take a project idea, deadlines, titles, descriptions, a set of people on your team and their qualifications (title, yeas of experience, etc) and generate a list of tickets that you can follow to complete your project</li>
+<li>Each ticket needs to have an ID, and can be freely moved to different categories of progress. The categories we had for progress include To Do, In Progress, QA (quality assurance), PR (pull request), and Closed.</li>
+<li>There should be a way to simulate standup (like in most agile workflows), and after each person gives updates to MirAI, it should be able to rearrange or edit the tickets so that progess flows smoothly. We wanted to this be as dynamic as possible, so that means if someone was sick, either their ticket gets assigned to someone else or the deadline gets extended. Or another case would be if someone on the team gets laid off, or if people join, the board should be able to reassign some of the heavier tickets (if needed) or add people to existing ones.</li>
+<li>Tickets should be linked to the project&rsquo;s Github repo. This is copying the feature that Jira already has (but for Github). Essentially, if you are working on ticket #1280, you should include &ldquo;1280&rdquo; in your commits, and MirAI will track those and will even be able to give feedback on your code quality.</li>
+<li>Filter tickets by certain catergories (Marketing, R&amp;D, Developing, etc)</li>
+<li>Have a decent UI</li>
+</ul>
+<h2 id="wrangling-with-llms">Wrangling with LLMs</h2>
+<p>There a lot of LLMs to choose from now, but they all have their respective trade offs.</p>
+<p>In terms of this project, here is what I felt:</p>
+<table>
+  <thead>
+      <tr>
+          <th>LLM</th>
+          <th>Pros</th>
+          <th>Cons</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gemini (2.0-flash)</td>
+          <td>The API Key is free, and it&rsquo;s relatively fast</td>
+          <td>It&rsquo;s not the best at interpreting instructions and struggled to be consistent. Would hallucinate and not follow formatting instructions, and overall made odd decisions.</td>
+      </tr>
+      <tr>
+          <td>DeepSeek</td>
+          <td>Super consistent and made great decisions, and the key is relatively cheap to use</td>
+          <td>Was super slow, which I think was either because of the reasoning skills or because the servers are located in China</td>
+      </tr>
+      <tr>
+          <td>ChatGPT (4.0)</td>
+          <td>Consistent and smart, had good customizability in terms of the API (e.g. can add system instructions)</td>
+          <td>Rather costly compared to the other models, but not enough to be an issue for a hackathon project (I think we only spent 15 cents total). Sometimes would not follow instructions.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Taking all of this into consideration, it was clear that ChatGPT would be the best model to go with for this project.</p>
+<h2 id="prompt-engineering">Prompt Engineering</h2>
+<p>Since our project requires the use of these models, we had to deal with the prompt engineering required to get them consistent. I orignally thought this would be the easiest part of the project, but it turns out prompting models is kinda like coding, you really have to specify all the edges cases or it won&rsquo;t do the exact thing you want it to do.</p>
+<p>The way that our project works is that whenver we require to use of AI to either generate or modify tickets, we send in the tickets to the LLM in Json format. Here is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>[{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;dev_type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Design&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;title&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Design a Database Schema&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;ticket_num&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1280</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;description&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Design an ERL diagram of all the tables you will need for this app.&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;assignments&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;bob12&#34;</span>, <span style="color:#e6db74">&#34;alices15&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;deadline&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;3/1/2025&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;category&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Todo&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;priority&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>When we read back the modified or generated tickets from the LLM, we need it to be in the same JSON format. The prompt we used was:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prompt <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;Here is the expected format: </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>prompt <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;dev_type&#39;: [P&amp;R,Design,Backend,Frontend,Admin,Marketing] - never change the ticket dev_type
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;title&#39;: The Ticket Title
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;ticket_num&#39;: Ticket Number (if you made new tickets, do not add this field) - never change the ticket number, it should be the same as before
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;description&#39;: Description of the ticket and what needs to be done
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;assignments&#39;: [List of members assigned to this ticket, by employee ID]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;deadline&#39;: Date for when this ticket should be completed
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;category&#39;: Category type of this ticket with this specfic string: (TODO, PROGRESS, QA, PR, CLOSED). Please set this field to CLOSED if the user sid they are finished with it, or in progress if they are working on it. And after they are working on it, place it in QR, and then PR. 
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;priority&#39;: A number from 1 to 5, where 1 is low priority, and 5 is high priority, for this ticket
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+</span></span></code></pre></div><p>As you can see, it was <em>a lot</em> of prompt engineering and reinforcing the rules to the LLM. When we tried out shorter prompts, the LLM would often not behavior as intended. Sometimes when we changed a completely seperate part of the prompt, the LLM would stop performing tasks in another part. We kept adding instructions to the prompt (I think the prompt is more than 300 words long) to keep it consistent. It was kind of like patching a hole with duct tape whenever a leak happened, just for another leak to occur somewhere else.</p>
+<div style="display: flex; justify-content: center; text-align: center; width: 100%;">
+    <div style="display: inline-block;">
+      <p>
+
+<img
+  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGN5cWJ6aTFuZ2t3a25kY3ZkcGtidWh0Zm9pdWI2cjJ6cWx2YzgyOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fADf4RUs3hUFvHz18o/giphy.gif"
+  alt="Flex Tape"
+  title="Flex Tape"
+  loading="lazy"
+/>
+</p>
+<p>Flex Tape solves everything</p>
+
+    </div>
+  </div>
+  
+<p>Overall, I thought prompt engineering was probably the most tedious part of this project (maybe second to frontend?). Although I don&rsquo;t see &ldquo;prompt engineering&rdquo; ever becoming a real job, I do understand now that it&rsquo;s not easy getting an LLM to perform a more complex task than just checking your homework answers. Some ideas I have that might make this process easier would be using something similar to <a href="https://zapier.com/" title="" target="_blank" rel="noopener noreferrer">Zapier,</a>
+ which builds workflows and it works great with LLMs.</p>
+<h2 id="building-the-backend">Building the Backend</h2>
+<p>I admit I am not some full-stack wizard, and I&rsquo;m not very familiar with most backend frameworks. My goto framework is python <a href="https://flask.palletsprojects.com/en/stable/" title="" target="_blank" rel="noopener noreferrer">Flask</a>
+ because of how lightweight it is and how easy it is for people to pickup.</p>
+<p>The backend was set up so we had a bunch of endpoints that made it easy for the frontend to communicate with the backend. These endpoints corresponded to tasks like initializing a project, adding team members, moving tickets around, simulating standup, etc. Some endpoints returned json ticket responses, which the frontend would then parse and place in the correct categories.</p>
+<p>When I first started coding, I barely made use of OOP. I would store everything in one file, leaving almost no abstraction. After working in a few internships, I realized how important it was to keep things organized. Especially since MirAI was made during a short hackathon, I needed my teammates to pick up and use the code I wrote fast. The best way to do this is to abstract away the details, and leave them objects they could use to perform certain tasks. For example, to request anything from an LLM, I made a <code>requestor.py</code> file that has a few methods (like asking something general, or with respect to a project) so my teammates could use it in coding their backend functions. I also wrapped details in classes, like project or member details, making them organized and easy to access.</p>
+<p>The general flow that our backend goes through is as follows:</p>
+<ul>
+<li>When users start a project, we initialize an empty project on the backend</li>
+<li>They can then update details, and the backend updates the project object in <code>project.py</code> with the same details</li>
+<li>Users can then add teammates and their details, which we also reflect on the backend as a member object in <code>member.py</code></li>
+<li>When the user then creates the tickets, a backend request is sent to generate and fetch the tickets</li>
+<li>Whenever stand up is called, a user will input their employee id and their updates, and the backend will ask the LLM to rearrange or modify the tickets</li>
+<li>We have endpoints exposing ticket information, so a user can access the ticket details, as well as look for git commits associated with a certain ticket number.</li>
+</ul>
+<p>During the hackathon, we finished the backend first and tested it out before continuing onto the frontend. In hindsight, this was a bad idea. We didn&rsquo;t leave much time left for building the actual UI. If we had built both in parallel, we would have more time to build extra features. What this means though, is that we would&rsquo;ve had to done way more planning. What we should&rsquo;ve done (and what I will try to do in the future) is to have a clear whiteboard session where we agree on what endpoints we should be making, their function and types (GET/POST, etc), and how the frontend will interact with the backend. This way, we can develop both independently without much conflict.</p>
+<h2 id="building-the-frontend">&ldquo;Building&rdquo; the Frontend</h2>
+<p>I don&rsquo;t know much about frontend. All I&rsquo;ve really done is pure HTML and CSS before, and I&rsquo;m not even that good at it. If you gave me React code, I think I could sort of figure out what is going on and might be able to modify it to my liking (I&rsquo;ve done this quite a few times), but I wouldn&rsquo;t know how to start making a React app.</p>
+<p>Turns out I&rsquo;m not the only one. My teammates also were not very familiar with frontend&ndash;except one that had a bit of experience in it. We used <a href="https://nextjs.org/" title="" target="_blank" rel="noopener noreferrer">Next.js</a>
+ to set up the frontend, using React for the website.</p>
+<p>None of us really knew how to make good UI, so we resorted to using LLMs to help us code. We allowed GPT to read our backend code, where it was able to generate the frontend React code, as well as the typescript necessary to send requests to Flask. Obviously, LLMs sometimes struggle with creating functional code, so we had to debug a lot of the output that came out of the models. However, I am very suprised at ChatGPT&rsquo;s ability to produce really good designs. You would think that since ChatGPT can&rsquo;t see the design it would not be great at frontend, but I guess it was able to learn design pattersn from just the code it was trained on. That&rsquo;s kind of insane if you ask me. It&rsquo;s like if someone with severe visual impairment since birth could perfectly picture the world based on just listening to someone talk about it.</p>
+<p>Here is how our frontend looked like:</p>
+<div style="display: flex; justify-content: center; text-align: center; width: 100%;">
+    <div style="display: inline-block;">
+      <div class="image-wrapper">
+  <img 
+    src="/images/mirai/mirai_2.jpg" 
+    alt="MirAI task board" 
+    title="The frontend for the actual board" 
+    data-caption="The frontend for the actual board" 
+    class="lightbox-enabled" 
+    style="cursor: zoom-in;" 
+    loading="lazy"
+  >
+</div>
+<p><em><strong>Hydro Homies</strong></em></p>
+    </div>
+  </div>
+  
+<h2 id="future">Future</h2>
+<p>There are some features I would like to eventually implement. These include:</p>
+<ul>
+<li>Adding the ability to send google calendar invites for meetings</li>
+<li>Getting standup to be more collaborative, using live chat for example</li>
+<li>Integrating with Slack to be able to find channels or people that can help you with your ticket</li>
+<li>Improving the interface and allowing for more than one project at a time</li>
+</ul>
+<p>I think great tools should work well with other great tools. Integration is definetly a top priority for any tool in my opinion.</p>
+<h2 id="putting-it-all-together">Putting it all together</h2>
+<p>Overall, I was pretty satisfied with the project, and we finished around midnight of the second day, 8 hours before submission. Unfortunately, we did not win anything (we weren&rsquo;t even runner ups), but it was a good experience nonetheless. In the future, I need to remind myself that I don&rsquo;t need a hackathon to force myself to do projects&mdash;I should do them by myself whenever I have time.</p>
+<p>If you want to checkout the github repo for the project, it is <a href="https://github.com/JhaoZ/mirai/tree/main" title="" target="_blank" rel="noopener noreferrer">here.</a>
+ The devpost submission is <a href="https://devpost.com/software/mirai-97gpno" title="" target="_blank" rel="noopener noreferrer">here.</a>
+</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/dev">dev</a></li>
+              
+              <li><a href="/tags/llm">llm</a></li>
+              
+              <li><a href="/tags/hackathon">hackathon</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        var disqus_shortname = 'billjhzhang';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+  <script src=https://athul.github.io/archie/js/lightbox.js></script>
+</main>
+
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/JhaoZ" rel="me" title="GitHub"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
+</svg></a><a class="border"></a><a class="soc" href="https://www.linkedin.com/in/bill-zhang-890735209/" rel="me" title="Linkedin"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#linkedin" />
+</svg></a><a class="border"></a><a class="soc" href="mailto:billjz2@illinois.edu" rel="me" title="Email"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail" />
+</svg></a><a class="border"></a><a class="soc" href="documents/Bill_Zhang_Resume.pdf" rel="me" title="Resume"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#file" />
+</svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2025  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+
+
+</div>
+    </body>
+</html>
