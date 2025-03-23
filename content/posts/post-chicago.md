@@ -5,7 +5,7 @@ date: 2025-03-23
 tags: [gallery, illinois, chicago]
 ---
 
-This is a [backdated](/backdate) post, this post should've been published on March 17th, 2025.
+This is a [backdated](backdate) post, this post should've been published on March 17th, 2025.
 
 For the poor souls at UIUC that have nowhere to go during spring break, Chicago is *the* top tier destination. Whether its because your home is 11,500 km away, or because you wanted to "lock in," staying in Champaign for all 9 days of break is quite depressing.
 
