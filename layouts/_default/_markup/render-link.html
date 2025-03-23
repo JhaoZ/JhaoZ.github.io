@@ -1,0 +1,5 @@
+{{- $isLocal := eq site.BaseURL "http://localhost:1313/archie/" }}
+{{- $prefix := cond $isLocal "/archie/" "/" }}
+<a href="{{ printf "%s%s" $prefix (.Destination | safeURL) }}" title="{{ .Title }}">
+  {{ .Text | safeHTML }}
+</a>

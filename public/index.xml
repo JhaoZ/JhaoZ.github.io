@@ -6,21 +6,35 @@
     <description>Recent content on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://athul.github.io/archie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Photos from Chicago (Spring Break Edition)</title>
+      <link>https://athul.github.io/archie/posts/post-chicago/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://athul.github.io/archie/posts/post-chicago/</guid>
+      <description>&lt;p&gt;This is a &#xD;&#xA;&lt;a href=&#34;//backdate&#34; title=&#34;&#34;&gt;&#xD;&#xA;  backdated&#xD;&#xA;&lt;/a&gt;&#xD;&#xA; post, this post should&amp;rsquo;ve been published on March 17th, 2025.&lt;/p&gt;&#xA;&lt;p&gt;For the poor souls at UIUC that have nowhere to go during spring break, Chicago is &lt;em&gt;the&lt;/em&gt; top tier destination. Whether its because your home is 11,500 km away, or because you wanted to &amp;ldquo;lock in,&amp;rdquo; staying in Champaign for all 9 days of break is quite depressing.&lt;/p&gt;&#xA;&lt;p&gt;I honestly don&amp;rsquo;t think there is &lt;em&gt;that&lt;/em&gt; much to do in Chicago. You could definetly be entertained for a week, but I feel like you can knock out all the top attractions in a day. And thats exactly what I tried to do.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>https://athul.github.io/archie/about/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://athul.github.io/archie/about/</guid>
-      <description>&lt;h2 id=&#34;tldr&#34;&gt;Tl;dr:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I&amp;rsquo;m Bill Zhang, Statitics &amp;amp; CS major at UIUC&lt;/li&gt;&#xA;&lt;li&gt;Interested in low level &amp;amp; (scalable) systems, have experience in AI/ML&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;ve done internships in the past, but I&amp;rsquo;m still exploring what I &lt;em&gt;really&lt;/em&gt; want to do&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;hi&#34;&gt;Hi!&lt;/h2&gt;&#xA;&lt;p&gt;My name is Bill Zhang! As mentioned on my home page (and above), I am currently a senior at the University of Illinois Urbana-Champaign (UIUC) studying &lt;a href=&#34;https://siebelschool.illinois.edu/academics/undergraduate/degree-program-options/bs-statistics-computer-science&#34;&gt;Statistics &amp;amp; CS&lt;/a&gt;, a single blended degree where I take the core classes from both the Statistics sequence and the Computer Science sequence&amp;ndash;still leaving left over time to take whatever electives I want in either field.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;Tl;dr:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I&amp;rsquo;m Bill Zhang, Statitics &amp;amp; CS major at UIUC&lt;/li&gt;&#xA;&lt;li&gt;Interested in low level &amp;amp; (scalable) systems, have experience in AI/ML&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;ve done internships in the past, but I&amp;rsquo;m still exploring what I &lt;em&gt;really&lt;/em&gt; want to do&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;hi&#34;&gt;Hi!&lt;/h2&gt;&#xA;&lt;p&gt;My name is Bill Zhang! As mentioned on my home page (and above), I am currently a senior at the University of Illinois Urbana-Champaign (UIUC) studying &#xD;&#xA;&lt;a href=&#34;https://athul.github.io/archie/https://siebelschool.illinois.edu/academics/undergraduate/degree-program-options/bs-statistics-computer-science&#34; title=&#34;&#34;&gt;&#xD;&#xA;  Statistics &amp;amp; CS&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;, a single blended degree where I take the core classes from both the Statistics sequence and the Computer Science sequence&amp;ndash;still leaving left over time to take whatever electives I want in either field.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Backdated Posts</title>
+      <link>https://athul.github.io/archie/backdate/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://athul.github.io/archie/backdate/</guid>
+      <description>&lt;p&gt;I started this blog on March 22nd, 2025. A backdated post is essentially a post that I had in mind in an earlier time before I made the blog. However, I still want to post them on this site. To keep my posts in order, I want to have them be in the order that I published them&amp;ndash;although this means that they are not going to be technically in chronological order in terms of actual time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Photos from Middle Fork</title>
       <link>https://athul.github.io/archie/posts/post-middlefork/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://athul.github.io/archie/posts/post-middlefork/</guid>
-      <description>&lt;p&gt;I made this post originally to try out a gallery feature I was implementing for this website. Coincidentally, I started working on right after I came back from the &lt;a href=&#34;https://www.champaignforests.org/forest-preserve/champaign-county/middle-fork-river&#34;&gt;Middle Fork River Forest Preserve&lt;/a&gt;. For some context, Middle Fork is a sectioned out zone in the middle of Illinois (it literally is surrounded on all 4 sides by farm land) that serves as a nature preserve. It also is Illinois&amp;rsquo; only international dark sky park as of 2025. I&amp;rsquo;ve wanted to come for a while to take pictures of the stars or milky way, but I never really found the time. Now, on the last few days of spring break, I decided it was worth a trip.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I made this post originally to try out a gallery feature I was implementing for this website. Coincidentally, I started working on right after I came back from the &#xD;&#xA;&lt;a href=&#34;https://athul.github.io/archie/https://www.champaignforests.org/forest-preserve/champaign-county/middle-fork-river&#34; title=&#34;&#34;&gt;&#xD;&#xA;  Middle Fork River Forest Preserve&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;. For some context, Middle Fork is a sectioned out zone in the middle of Illinois (it literally is surrounded on all 4 sides by farm land) that serves as a nature preserve. It also is Illinois&amp;rsquo; only international dark sky park as of 2025. I&amp;rsquo;ve wanted to come for a while to take pictures of the stars or milky way, but I never really found the time. Now, on the last few days of spring break, I decided it was worth a trip.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcome to my Webpage!</title>
