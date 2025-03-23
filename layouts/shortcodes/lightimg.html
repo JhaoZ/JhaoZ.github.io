@@ -1,0 +1,14 @@
+{{- $isLocal := eq .Site.BaseURL "http://localhost:1313/archie/" }}
+{{- $prefix := cond $isLocal "/archie/" "/" }}
+
+<div class="image-wrapper">
+  <img 
+    src="{{ printf "%s%s" $prefix (.Get "src") }}" 
+    alt="{{ .Get "alt" }}" 
+    title="{{ .Get "caption" }}" 
+    data-caption="{{ .Get "caption" }}" 
+    class="lightbox-enabled" 
+    style="cursor: zoom-in;" 
+    loading="lazy"
+  >
+</div>

@@ -1,33 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const galleryImages = document.querySelectorAll(".image-gallery img");
+  console.log("runner");
+  const images = document.querySelectorAll("img");
 
-    galleryImages.forEach(img => {
-      img.addEventListener("click", () => {
-        const overlay = document.createElement("div");
-        overlay.classList.add("lightbox-overlay");
+  images.forEach(img => {
+    // Skip emojis, icons, or other UI images if needed
+    if (img.closest(".no-lightbox")) return;
 
-        const enlarged = document.createElement("img");
-        enlarged.src = img.src;
-        enlarged.alt = img.alt;
-        enlarged.classList.add("lightbox-image");
+    img.style.cursor = "zoom-in";
 
-        const caption = document.createElement("p");
-        caption.textContent = img.dataset.caption;
-        caption.classList.add("lightbox-caption");
+    img.addEventListener("click", () => {
+      const overlay = document.createElement("div");
+      overlay.classList.add("lightbox-overlay");
 
-        const closeBtn = document.createElement("span");
-        closeBtn.textContent = "×";
-        closeBtn.classList.add("lightbox-close");
+      const enlarged = document.createElement("img");
+      enlarged.src = img.src;
+      enlarged.alt = img.alt;
+      enlarged.classList.add("lightbox-image");
 
-        closeBtn.addEventListener("click", () => overlay.remove());
-        overlay.addEventListener("click", (e) => {
-          if (e.target === overlay) overlay.remove();
-        });
+      const caption = document.createElement("p");
+      caption.textContent = img.title || img.alt || "";
+      caption.classList.add("lightbox-caption");
 
-        overlay.appendChild(enlarged);
-        overlay.appendChild(caption);
-        overlay.appendChild(closeBtn);
-        document.body.appendChild(overlay);
+      const closeBtn = document.createElement("span");
+      closeBtn.textContent = "×";
+      closeBtn.classList.add("lightbox-close");
+
+      closeBtn.addEventListener("click", () => overlay.remove());
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) overlay.remove();
       });
+
+      overlay.appendChild(enlarged);
+      if (caption.textContent) overlay.appendChild(caption);
+      overlay.appendChild(closeBtn);
+      document.body.appendChild(overlay);
     });
   });
+});
