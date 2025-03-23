@@ -23,6 +23,6 @@ Like I mentioned, my original intention was to ensure my gallery feature was wor
 
 Here, I want to test out a non-gallery image that can also open up a pop up. Here is one I like (even though its blurry cause I couldn't hold my camera still enough for the 8 second exposure):
 
-{{< lightimg src="/images/middlefork/middlefork_5.jpg" alt="Long exposure" caption="Long exposure shot of the lake at Middle Fork" >}}
+{{< lightimg src="images/middlefork/middlefork_5.jpg" alt="Long exposure" caption="Long exposure shot of the lake at Middle Fork" >}}
 
 I have more photos on my actual camera. All of the photos above were taken with a Samsung S24+. When I have time (or if I remember), I'll upload some of the photos from my camera to here.
