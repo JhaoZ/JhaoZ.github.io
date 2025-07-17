@@ -2,6 +2,7 @@
 title = "About Me"
 description = "So, who am I?"
 date = "2025-03-22"
+updated = "2025-07-16"
 aliases = ["about-me"]
 author = "Bill Zhang"
 disable_comments = true
@@ -9,7 +10,7 @@ disable_comments = true
 
 ## Tl;dr: 
 
-- I'm Bill Zhang, Statitics & CS major at UIUC
+- I'm Bill Zhang, a Master's of CS students at UIUC (I did my undergrad here too! My major was Stats & CS)
 - Interested in low level & (scalable) systems, have experience in AI/ML
 - I've done internships in the past, but I'm still exploring what I *really* want to do
 
@@ -23,7 +24,9 @@ Although I'm super passionate about CS, I enjoy photography, playing badminton, 
 
 ## Work Experience
 
-- **[Meta](http://meta.com/)**: Incoming Software Engineer Intern | May 25 - Aug 25
+- **[Meta](http://meta.com/)**:  Software Engineer Intern | May 25 - Aug 25\
+*PoGO-Stick (Redex) Team*
+    - Worked on building a graph-traversal fuzzing algorithm to generate consistent profiling data that does not have any control flow violations to help debug and reduce violations in Redex, Meta's open source Java / Kotlin Android compiler & optimizer
 - **[Capital One](https://www.capitalone.com/)**: Machine Learning Intern ([Tech Incubator](https://www.capitalone.com/tech/machine-learning/tech-incubator-program/)) | Sep 24 - Mar 25\
 *IFX APEX Recommendation Team*
     - Worked on engineering and optimizing a pipeline to generate multimodal embeddings to increase accuracy of a previously single-modal transformer recommedation system, while training models to determine their effectiveness

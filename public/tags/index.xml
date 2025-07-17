@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bill Zhang</title>
-    <link>https://athul.github.io/archie/tags/</link>
+    <link>http://localhost:1313/archie/tags/</link>
     <description>Recent content in Tags on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://athul.github.io/archie/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/archie/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chicago</title>
-      <link>https://athul.github.io/archie/tags/chicago/</link>
+      <link>http://localhost:1313/archie/tags/chicago/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/chicago/</guid>
+      <guid>http://localhost:1313/archie/tags/chicago/</guid>
       <description></description>
     </item>
     <item>
       <title>Dev</title>
-      <link>https://athul.github.io/archie/tags/dev/</link>
+      <link>http://localhost:1313/archie/tags/dev/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/dev/</guid>
+      <guid>http://localhost:1313/archie/tags/dev/</guid>
       <description></description>
     </item>
     <item>
       <title>Gallery</title>
-      <link>https://athul.github.io/archie/tags/gallery/</link>
+      <link>http://localhost:1313/archie/tags/gallery/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/gallery/</guid>
+      <guid>http://localhost:1313/archie/tags/gallery/</guid>
       <description></description>
     </item>
     <item>
       <title>Hackathon</title>
-      <link>https://athul.github.io/archie/tags/hackathon/</link>
+      <link>http://localhost:1313/archie/tags/hackathon/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/hackathon/</guid>
+      <guid>http://localhost:1313/archie/tags/hackathon/</guid>
       <description></description>
     </item>
     <item>
       <title>Illinois</title>
-      <link>https://athul.github.io/archie/tags/illinois/</link>
+      <link>http://localhost:1313/archie/tags/illinois/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/illinois/</guid>
+      <guid>http://localhost:1313/archie/tags/illinois/</guid>
       <description></description>
     </item>
     <item>
       <title>Llm</title>
-      <link>https://athul.github.io/archie/tags/llm/</link>
+      <link>http://localhost:1313/archie/tags/llm/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/llm/</guid>
+      <guid>http://localhost:1313/archie/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>https://athul.github.io/archie/tags/introduction/</link>
+      <link>http://localhost:1313/archie/tags/introduction/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/introduction/</guid>
+      <guid>http://localhost:1313/archie/tags/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>Middlefork</title>
-      <link>https://athul.github.io/archie/tags/middlefork/</link>
+      <link>http://localhost:1313/archie/tags/middlefork/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/tags/middlefork/</guid>
+      <guid>http://localhost:1313/archie/tags/middlefork/</guid>
       <description></description>
     </item>
   </channel>

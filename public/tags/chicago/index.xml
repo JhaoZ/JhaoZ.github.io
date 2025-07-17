@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chicago on Bill Zhang</title>
-    <link>https://athul.github.io/archie/tags/chicago/</link>
+    <link>http://localhost:1313/archie/tags/chicago/</link>
     <description>Recent content in Chicago on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://athul.github.io/archie/tags/chicago/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/archie/tags/chicago/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photos from Chicago (Spring Break Edition)</title>
-      <link>https://athul.github.io/archie/posts/post-chicago/</link>
+      <link>http://localhost:1313/archie/posts/post-chicago/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/posts/post-chicago/</guid>
-      <description>&lt;p&gt;This is a &lt;a href=&#34;backdate&#34; title=&#34;&#34;&gt;backdated&lt;/a&gt;&#xD;&#xA; post, this post should&amp;rsquo;ve been published on March 17th, 2025.&lt;/p&gt;&#xA;&lt;p&gt;For the poor souls at UIUC that have nowhere to go during spring break, Chicago is &lt;em&gt;the&lt;/em&gt; top tier destination. Whether its because your home is 11,500 km away, or because you wanted to &amp;ldquo;lock in,&amp;rdquo; staying in Champaign for all 9 days of break is quite depressing.&lt;/p&gt;&#xA;&lt;p&gt;I honestly don&amp;rsquo;t think there is &lt;em&gt;that&lt;/em&gt; much to do in Chicago. You could definetly be entertained for a week, but I feel like you can knock out all the top attractions in a day. And thats exactly what I tried to do.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/archie/posts/post-chicago/</guid>
+      <description>&lt;p&gt;This is a &lt;a href=&#34;http://localhost:1313/archie/backdate&#34; title=&#34;&#34;&gt;backdated&lt;/a&gt;&#xD;&#xA; post, this post should&amp;rsquo;ve been published on March 17th, 2025.&lt;/p&gt;&#xA;&lt;p&gt;For the poor souls at UIUC that have nowhere to go during spring break, Chicago is &lt;em&gt;the&lt;/em&gt; top tier destination. Whether its because your home is 11,500 km away, or because you wanted to &amp;ldquo;lock in,&amp;rdquo; staying in Champaign for all 9 days of break is quite depressing.&lt;/p&gt;&#xA;&lt;p&gt;I honestly don&amp;rsquo;t think there is &lt;em&gt;that&lt;/em&gt; much to do in Chicago. You could definetly be entertained for a week, but I feel like you can knock out all the top attractions in a day. And thats exactly what I tried to do.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

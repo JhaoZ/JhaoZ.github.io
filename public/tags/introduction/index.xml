@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Bill Zhang</title>
-    <link>https://athul.github.io/archie/tags/introduction/</link>
+    <link>http://localhost:1313/archie/tags/introduction/</link>
     <description>Recent content in Introduction on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://athul.github.io/archie/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/archie/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to my Webpage!</title>
-      <link>https://athul.github.io/archie/posts/post-1/</link>
+      <link>http://localhost:1313/archie/posts/post-1/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://athul.github.io/archie/posts/post-1/</guid>
+      <guid>http://localhost:1313/archie/posts/post-1/</guid>
       <description>&lt;p&gt;Hi there! This is the first post on my personal website / blog.&lt;/p&gt;&#xA;&lt;p&gt;I previously had a personal portfolio website, but I never liked the look of it and it was hard for me to update and add information because I  wrote the whole thing in pure HTML and CSS. 2 years later after I made the intial website, I decided I was going to remake it during spring break, and this is the result!&lt;/p&gt;</description>
     </item>
   </channel>
