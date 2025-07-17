@@ -10,7 +10,7 @@
             Posted on {{ dateFormat ":date_medium" .Date }}
             {{ with .Params.updated }}
               {{ if ne . $.Date }}
-                <span class="updated-label"><br/>Updated on {{ dateFormat ":date_medium" . }}</span>
+                <span class="updated-label"><br/>Last updated on {{ dateFormat ":date_medium" . }}</span>
               {{ end }}
             {{ end }}
             {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
