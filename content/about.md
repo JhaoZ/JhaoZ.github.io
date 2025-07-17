@@ -10,7 +10,7 @@ disable_comments = true
 
 ## Tl;dr: 
 
-- I'm Bill Zhang, a Master's of CS students at UIUC 
+- I'm Bill Zhang, a Master's of CS student at UIUC 
 - Interested in low level & (scalable) systems, have experience in AI/ML
 - I've done four internships in the past, and am looking for a full time role now!
 
