@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Illinois on Bill Zhang</title>
-    <link>http://localhost:1313/archie/tags/illinois/</link>
+    <link>https://athul.github.io/archie/tags/illinois/</link>
     <description>Recent content in Illinois on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/archie/tags/illinois/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://athul.github.io/archie/tags/illinois/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photos from Chicago (Spring Break Edition)</title>
-      <link>http://localhost:1313/archie/posts/post-chicago/</link>
+      <link>https://athul.github.io/archie/posts/post-chicago/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archie/posts/post-chicago/</guid>
+      <guid>https://athul.github.io/archie/posts/post-chicago/</guid>
       <description>&lt;p&gt;For the poor souls at UIUC that have nowhere to go during spring break, Chicago is &lt;em&gt;the&lt;/em&gt; top tier destination. Whether its because your home is 11,500 km away, or because you wanted to &amp;ldquo;lock in,&amp;rdquo; staying in Champaign for all 9 days of break is quite depressing.&lt;/p&gt;&#xA;&lt;p&gt;I honestly don&amp;rsquo;t think there is &lt;em&gt;that&lt;/em&gt; much to do in Chicago. You could definetly be entertained for a week, but I feel like you can knock out all the top attractions in a day. And thats exactly what I tried to do.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Photos from Middle Fork</title>
-      <link>http://localhost:1313/archie/posts/post-middlefork/</link>
+      <link>https://athul.github.io/archie/posts/post-middlefork/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archie/posts/post-middlefork/</guid>
-      <description>&lt;p&gt;I made this post originally to try out a gallery feature I was implementing for this website. Coincidentally, I started working on right after I came back from the &lt;a href=&#34;https://www.champaignforests.org/forest-preserve/champaign-county/middle-fork-river&#34; title=&#34;&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Middle Fork River Forest Preserve&lt;/a&gt;&#xD;&#xA;. For some context, Middle Fork is a sectioned out zone in the middle of Illinois (it literally is surrounded on all 4 sides by farm land) that serves as a nature preserve. It also is Illinois&amp;rsquo; only international dark sky park as of 2025. I&amp;rsquo;ve wanted to come for a while to take pictures of the stars or milky way, but I never really found the time. Now, on the last few days of spring break, I decided it was worth a trip.&lt;/p&gt;</description>
+      <guid>https://athul.github.io/archie/posts/post-middlefork/</guid>
+      <description>&lt;p&gt;I made this post originally to try out a gallery feature I was implementing for this website. Coincidentally, I started working on right after I came back from the &lt;a href=&#34;https://www.champaignforests.org/forest-preserve/champaign-county/middle-fork-river&#34; title=&#34;&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Middle Fork River Forest Preserve&lt;/a&gt;&#xA;. For some context, Middle Fork is a sectioned out zone in the middle of Illinois (it literally is surrounded on all 4 sides by farm land) that serves as a nature preserve. It also is Illinois&amp;rsquo; only international dark sky park as of 2025. I&amp;rsquo;ve wanted to come for a while to take pictures of the stars or milky way, but I never really found the time. Now, on the last few days of spring break, I decided it was worth a trip.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

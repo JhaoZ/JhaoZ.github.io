@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hackathon on Bill Zhang</title>
-    <link>http://localhost:1313/archie/tags/hackathon/</link>
+    <link>https://athul.github.io/archie/tags/hackathon/</link>
     <description>Recent content in Hackathon on Bill Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/archie/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://athul.github.io/archie/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building MirAI (HackIllinois 2025)</title>
-      <link>http://localhost:1313/archie/posts/post-mirai/</link>
+      <link>https://athul.github.io/archie/posts/post-mirai/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archie/posts/post-mirai/</guid>
+      <guid>https://athul.github.io/archie/posts/post-mirai/</guid>
       <description>And the pains of prompt engineering</description>
     </item>
   </channel>
