@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The Meta Internship Experience - Bill Zhang</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="And why the FAANG dream is dead (or needs to die)" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://athul.github.io/archie/posts/post-meta/">
+  <meta property="og:site_name" content="Bill Zhang">
+  <meta property="og:title" content="The Meta Internship Experience">
+  <meta property="og:description" content="And why the FAANG dream is dead (or needs to die)">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-15T00:00:00+00:00">
+    <meta property="article:tag" content="Internship">
+    <meta property="article:tag" content="Recruiting">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Meta Internship Experience">
+  <meta name="twitter:description" content="And why the FAANG dream is dead (or needs to die)">
+
+        <link href="https://athul.github.io/archie/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://athul.github.io/archie/css/main.ce706f11facadc5e67e82a1d550a5b2c849b364b355482156bd6ec5e7877e0f6.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://athul.github.io/archie/css/dark.cca1c0c497f570f68719dc424ecdaf88f620726756877d6d84248a27db96551c.css" media="(prefers-color-scheme: dark)"  /><link rel="stylesheet" href="https://athul.github.io/archie/katex/katex.min.css ">
+		<script defer src="https://athul.github.io/archie/katex/katex.min.js"></script>
+		<script defer src="https://athul.github.io/archie/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+		</script>
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://athul.github.io/">Bill Zhang</a>
+	</div>
+	<nav>
+		
+		<a href="/archie/">Home</a>
+		
+		<a href="/archie/posts">All posts</a>
+		
+		<a href="/archie/about">About Me</a>
+		
+		<a href="/archie/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">The Meta Internship Experience</h1>
+          <div class="meta">
+            Posted on Feb 15, 2026
+            
+            
+          </div>
+        </div>
+        
+        <section class="body">
+          <p>I realize I have not updated this blog in about a year, which makes sense given my hectic schedule for the past 4 years of college. Now that I&rsquo;m finally in my last semester of college, I have a bit more freedom, which I want to dedicate to writing more posts.</p>
+<p>In retrospect, I should&rsquo;ve written this article way earlier (preferably when I just finished the internship). If you haven&rsquo;t guessed by the title, I want to talk about my software engineer internship at Meta (previously known as Facebook). I worked out of the Menlo Park Office in the Bay Area of California, which is the HQ.</p>
+<p>Why did I go to Meta? I chose Meta over both my Google and Amazon offers (sometimes I regret it, sometimes I don&rsquo;t) because they were the first FAANG company to give me an offer. Amazon and Google gave me an offer about 4 months after I got my Meta offer, which was way too late for me.</p>
+<h1 id="so-what-did-i-do">So what did I do</h1>
+<p>I was placed on a compiler subteam called PoGO-Stick, part of Meta&rsquo;s larger Android Compiler Team called Redex. <a href="https://github.com/facebook/redex" target="_blank" rel="noopener noreferrer">Redex</a>, is an open source Android &ldquo;compiler.&rdquo; In reality it is a bytecode optimizer that takes the code for Meta&rsquo;s Anrdoid apps and compresses them by transforming, modifying, and deleting code through compiler optimizations. By reducing size, the speed of the apps also increase. My subteam deals with supplying profiling data to the compiler so it makes better optimizations.</p>
+<p>My project was essentially to great a graph algorithm to fuzz the compiler by generating consistent profiling data. That sentence probably does not make sense to most people, so I&rsquo;ll explain it better. The compiler collects data about which code blocks are hit (deemed hot if hit, cold otherwise), and sometimes there are &ldquo;violations&rdquo; that occur. An example would be a cold set of code that leads into a hot set of code, technically impossible since that means the first set cannot be cold. This means that somewhere in the compiler, the code is likely being transformed incorrectly, or there is an issue with the pipeline of data. The goal for my project was to generate random data that made sense, feed it into the compiler, and see whats happening. Through this method, known as fuzz testing, we might be able to find out where some of the errors in the compiler lie.</p>
+<p>Why am I allowed to talk about this in detail? Well, the compiler is open source, so anyone can read the code and figure out whats going on anyway. None of this is proprietary. This is one of the benefits on being on this team, I don&rsquo;t think I could talk about any other intern project this deeply without violating an NDA somewhere.</p>
+<h1 id="orientation">Orientation</h1>
+<p>The first day for a Meta Intern looks like this: You wake up, find where your shuttle stop is, enter the shuttle and be shocked about the number of monitors on the seats, take the bus down to the new campus of Meta, get off, wait in line with a few hundred other interns, check-in and grab your badge, walk about half a mile to the orientation area, eat breakfast and try to meet new interns (you&rsquo;ll most likely never see most of them again), head into the orientation room, and spend the next 6 hours listening to orientation yap.</p>
+<p>I don&rsquo;t remember much about orientation, maybe because I was super tired from the fact that I got to my corporate housing at 11 pm the night before due to (expected, because its ORD) delays. Maybe it was the fact that I didn&rsquo;t take a break before school ended and jumped straight into interning (I even skipped my graduation to start early). They showed us some cool videos on the new products like the RayBans and the Meta Quest, and they even had demos for us during lunch break.</p>
+<p>A lot of information was shown to us during orientation, but I only remember one thing clearly. They gave out a list of values that Meta has, and I can&rsquo;t remember a single one, except the first one.</p>
+<div class="bold-quote-container">
+    <blockquote class="bold-quote">
+        &ldquo;Move Fast and Break Things&rdquo;
+    </blockquote>
+</div>
+
+<style>
+.bold-quote-container {
+    margin: 2.5rem 0;
+}
+
+.bold-quote {
+    font-size: 1.5rem;    
+    font-weight: 800;    
+    line-height: 1.3;
+    border-left: 10px solid #ccc;  
+    padding: 0.5rem 0 0.5rem 2rem;
+    margin: 0;
+    color: inherit;       
+}
+
+ 
+@media (max-width: 600px) {
+    .bold-quote {
+        font-size: 1.25rem;
+        border-left-width: 6px;
+        padding-left: 1.2rem;
+    }
+}
+</style>
+<p>I think this is what sets Meta apart from the rest of the FAANG. My internship experience can be summarized in those 5 words.</p>
+<p>Meta depends on their engineers to move fast and have high output (this is always why instagram is so buggy). From Day 2, I was submitting code (called diffs). Even though I did not explicitly &ldquo;break things,&rdquo; I did have times where I needed to revert changes that might have not happened if I wasn&rsquo;t in such a rush to submit code as much as possible. You might be wondering, why was I in such a rush&hellip;?</p>
+<h1 id="the-rating-system">The Rating System</h1>
+<p>What might be the worst part of the internship is the rating system. From day 1, you are told that you are in competition with your fellow interns. Only X% of the interns get return offers, and everyone there wants one (especially in this job market). This included me. I knew from day 1 that I would have to give it my all since I wouldn&rsquo;t know how many return offers they woudl give this year.</p>
+<p>How does the rating system work? In simple, there are a few ratings interns (and full timers!) get:</p>
+<ul>
+<li>GE (Greatly Exceeds) - One of the best ratings you can get. It means that you greatly exceeded the expectations they had for you as an intern. This usually means not only completing your intern project, but being integrated with your team and making a large impact. As an engineer, you are at least operating at mid-level position. The interns I&rsquo;ve seen get GE often targetted cross team projects or made insanely large contributions to their team. Technically, there is a level about GE called RE (Redefines Expectations) but I did not meet any intern that got that rating and its very very rare. GEs usually get return offers (except one year when there was rescinded offers)</li>
+</ul>
+<ul>
+<li>EE (Exceeds Expectations) - This rating is pretty good, but not a guarantee for a return offer. It generally means you completed your intern project and stretch goals (extra stuff your manager gives to you). You should be in good communication with your manager and have good rapport with your team. I think most interns aim for this.</li>
+</ul>
+<ul>
+<li>MA (Meets All) - This rating means that you met the expectations of an intern. You completed the project, and have the skills to be a successful new hire at Meta. However, MA puts you in larger risk of not receiving a return offer. Technically, you meet the requirements to being hired, but if there is limited headcount, it might be tough to justify a return offer.</li>
+</ul>
+<ul>
+<li>BE/MS/MN (Below Expectations / Meets Some / Meets None) - This is essentially getting a &ldquo;FAIL.&rdquo; It means that you didn&rsquo;t finish your project, or you had other issues that would make you a bad fit as a new hire. Regardless of how many return offers the company gives, interns that receieve this rating will not get a return offer no matter what.</li>
+</ul>
+<p>Each intern is rating on a few axes, such as communication, ability to learn, engineering ability, etc. Each axis gets a rating, and your total rating is an aggregate of what you got on the axes.</p>
+<p>Who decides what you get? Well&hellip;</p>
+<h1 id="calibration">Calibration</h1>
+<p>This is a dreaded event for a Meta intern. Calibration is when your manager meets with a grouop of other managers, as well as a few leads, to discuss if their rating of you is deserved. Think of it like a trial, other managers and leads can try to knock down your rating, and your manager has to defend you (or not, I guess). Where is the evidence coming from? <em>You.</em></p>
+<p>Each intern writes a calibration document discussing what they did and relate it the axes they are being graded on. Your manager can use this to back up the rating they give you and hopefully defend your work. Why would other managers try to knock down your rating? Ratings are curved, meaning only X% can receive a certain rating. Each cohort of calibration is ~10 interns, and they can&rsquo;t just give all 10 of them GE. The higher your rating is, the better it is for your manager (it helps them promote faster), so they want you to have a high rating. In this sense, you and your manager are on the same team, but if you do bad, your manager will have no choice but to give you a bad rating.</p>
+<p>How else is rating decided? The amount of code you write. This is arguable the worst thing about the internship. The amount of code output, in my opinion, has little impact on the quality of work you do. In fact, my team averages much lower code output than say a mobile app team (they have to write so much frontend design code). My project specifially, was heavy on design and algorithmic thinking, which translates to less code. I remember early on my manager mentioned that getting a return offer might be difficult since the previous interns on my team struggled with code output. In calibration, your code output is compared to the 9 other interns you are competing against.</p>
+<p>Calibration happens twice, once during midpoint, and once at the end. The midpoint one is mostly to show if you are on track, and the calibration at the end is your final rating. Usually, you need to show improvement from the first calibration to the second, regardless of how well you are doing. This was a hard part for me, and I spent a long time figuring out how I could make a large improvement (read below to found out what I ended up doing).</p>
+<p>I don&rsquo;t know what my rating is. You aren&rsquo;t supposed to know (some managers will tell their interns, mine did not). Since I did receive a return offer and had very positive feedback, I assumed that I at least got EE. My goal was GE, but I guess I&rsquo;ll never know if I got it or not.</p>
+<p>Oh, just in case you thought this was just for interns? It&rsquo;s not. This process happens twice a year for all the engineers at Meta, and its a stressful time because if you get a bad rating, you might just be on the next round of layoffs.</p>
+<h1 id="aiming-for-ge">Aiming for GE</h1>
+<p>I don&rsquo;t know why I wanted to get a GE rating so bad. Maybe it was to fulfill my ego, or maybe it was because I could be safe in knowing I&rsquo;d get a return offer, or maybe I just felt like I wanted a challenge. I still don&rsquo;t know why, but I know that from day 1, I was dead set on getting a GE rating.</p>
+<p>I finished the basics (at least, the hardest part) of my project in about 4 weeks, and after some tweaking and additional changes, I was essentially done with my main project. My manager gave me great feedback on what to do to achieve a better rating. In essence, I needed to be more proactive and have more initiative. I accomplished this by taking on small side projects as I went through the internship. This included making a debugging visualization tool for my team, building metric collecting data pipelines to track progress, and making graph visualizers to compare before and after changes.</p>
+<p>Along the way, I picked up some small tasks my team had lying around as I waited for my code to compile and run through tests.</p>
+<p>By completing my main project, my 3 side projects, and the random tasks my team had, I ended up with 60+ code submissions and a few thousand lines of code.</p>
+<h1 id="outside-work">Outside Work</h1>
+<p>To be honest, I didn&rsquo;t have much work life balance that summer. I&rsquo;d get into the office as early as possible, do a workout, and hit my desk working all the way until dinner at 6pm. I&rsquo;d get home at 7pm, which is crazy because I&rsquo;d usually leave at 7am in the morning. This means I was out for 12 hours a day, mostly doing work. I also never took a single remote day.</p>
+<p>Even after coming back to my apartment, I&rsquo;d get back on leetcode and read <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" title="" target="_blank" rel="noopener noreferrer">OSTEP</a>
+ to prepare for the next recruiting season. I was exhausted everyday, and I&rsquo;m sure that if this continued for any longer, I would&rsquo;ve been permanently burned out. This is something I am keeping in mind for when I actually start a new grad job. If I burn myself out as a new grad, then there won&rsquo;t be many chances to refresh myself.</p>
+<p>I remember the first few weeks I&rsquo;d come back so exhausted I couldn&rsquo;t leave my bed. I&rsquo;d try my best to digest the operating systems textbook while my muscles were fully non-functional. My body eventually got used to it, and I stopped feeling so exhausted, but I realize that everyone has their limits.</p>
+<p>I honestly didn&rsquo;t meet that many interns. I knew there were groups of interns that did trips together or had fun after work. I barely did any of that. I was both caught up in so much work as well as isolated from most of the interns due to my office location. There wasn&rsquo;t much opportunity to meet people either, and all the interns lived pretty sparsly.</p>
+<p>I did go hiking and biking a few times. In fact, one of my favorite parts about the internship is the intern bike program. They give all interns a bike to use over summer as long as you watch a training video. I didn&rsquo;t have a car for the internship (which was also probably why the internship was so socially dead), so I&rsquo;d use my bike to get groceries and sometimes get to work.</p>
+<p>I did however find out I like the Bay Area. Living in Illinois the past 4 years makes me appreciate any ray of sunshine you can get, and the Bay Area has an infinite supply. When I was looking for new grad positions, I pretty much only focused on the Bay. The food is also really good.</p>
+<h1 id="the-pros">The Pros</h1>
+<p>This is gonna end up mostly like a list, but here it goes:</p>
+<ul>
+<li>Convenience. Everything from housing, to transportation, to food is covered. I didn&rsquo;t have to spend a dime on it (except food on the weekends). The corporate housing was super nice (it was 6k a month I think) and I had a roommate, we had seperate rooms and bathrooms. A bunch of cooking wear, towels, and household appliances were procvided too. I was also put in downtown mountain view, perfect cause it was right next to Castro Street and the Caltrain. In terms of transporation, the intern bike program was great and I also received free funds to use for the Caltrain. Food at Meta was also good, especially the desserts.</li>
+<li>Interesting Work. Each intern fills out a preference sheet before the internship and they get matched to a team based on it. I remember selecting that I was interested in compilers, despite having no experience in it. I&rsquo;m glad that I was indeed matched with a compilers team.</li>
+<li>Tooling. If I never use it again, I&rsquo;m going to miss this a lot: Meta tooling is top tier. I massively prefer using sapling compared to git for version control now. Meta&rsquo;s tooling infrastructure allows engineers to build fast without blockage. I don&rsquo;t think I have ever been able to submit so much code in the first week of an internship, I spend most of the time waiting for access. Like I mentioned, this is what sets Meta apart. &ldquo;Move fast and break things&rdquo;.</li>
+<li>Feedback. Meta is all about feedback, and I&rsquo;m all for that. Each diff needs at least one other reviewer, and I got so much feedback on the quality of my code. I&rsquo;m sure that the internship has made me a better software engineer because of it. The feedback from calibration and the weekly 1:1s with my manager were also super useful.</li>
+<li>Team. Meta supports team onsites and team building events. I went sailing with my team for an onsite during the summer, and it was really fun and definetly makes the team bond better. I haven&rsquo;t seen this at any other company, but I think its important for teams to work together on subjects that are not work as well.</li>
+<li>Events. Meta has some intern social events, such as an arcade night, a Santa Cruz boardwalk trip, and a campfire on campus. I wish there were more events, especially considering that my previous internships had way more. There were also a lot of tech talks and learning events.</li>
+</ul>
+<h1 id="the-cons">The Cons</h1>
+<p>This is also a list:</p>
+<ul>
+<li>Stress. I was never more stress and exhausted during an internship. I usually treat internships like a break, because after work I don&rsquo;t have homework to do like in school. But this internship was probably as stressful as school, if not worse. This lead to severe burnout when I got back to college after the internship, since it meant that I didn&rsquo;t take a single break since the beginning of 2025 (all the way until the end of 2025).</li>
+<li>Limited Impact. This is one of my largest issues with working at FAANG. There are so many engineers and so many fleshed out products that most people end up working on maintence of small extra features for the products. At least from what I&rsquo;ve seen, its hard to start and own a project from scratch at these companies. Working at a smaller company gives this advantage. Ultimately, I think this is a large part of why I think growing at Meta is not as effective as growing at smaller companies.</li>
+<li>Team Luck. Unfortunetly, some of my fellow interns were not as lucky as me with their team. Some of them had negligent managers, which impacted their rating.</li>
+<li>Calibration. Similar to stress, I think calibration is a very large con of working at Meta. I understand its what keeps the company running, but I think for employee happiness, this is truly not helpful at all.</li>
+</ul>
+<h1 id="overall">Overall</h1>
+<p>I enjoyed the internship experience, and learned a lot, despite being exhausted all the time. I think if you want to be a successful software engineer, going to Meta is a great choice. But for me, I think there is much more than just being a software engineer, my goal is grow as much as possible in both engineering and leadership abilities. I want to eventually lead large projects and design solutions to difficult problems at scale. At FAANG companies, I am skeptical how much of this is possible, given the size and bureaucracy.</p>
+<p>A lot of people used to have the &ldquo;FAANG&rdquo; dream: the dream where you work at one of these tech companies and live a chill life. The dream is now dead, these companies no longer have cushy lifestyles and will fire easily when things go bad. There is no stability in tech anymore, and this may be here to stay. In my opinion, if you want to outlast the competition, you cannot just be an average software engineer. I feel like there are many avenues for this, one is working at a smaller company. The other is to make your own startup. Either way, I believe 90% of engineers will end up in a dead end at FAANG.</p>
+<p>If you still believe in the FAANG dream, its time to wake up.</p>
+<div style="display: flex; justify-content: center; text-align: center; width: 100%;">
+    <div style="display: inline-block;">
+      <div class="image-wrapper">
+  <img 
+    src="/images/meta/metalogo.jpg" 
+    alt="Meta Logo" 
+    title="The Meta Logo in the Menlo Park Office" 
+    data-caption="The Meta Logo in the Menlo Park Office" 
+    class="lightbox-enabled" 
+    style="cursor: zoom-in;" 
+    loading="lazy"
+  >
+</div>
+
+    </div>
+  </div>
+  
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/internship">internship</a></li>
+              
+              <li><a href="/tags/recruiting">recruiting</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        var disqus_shortname = 'billjhzhang';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+  <script src=https://athul.github.io/archie/js/lightbox.js></script>
+</main>
+
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/JhaoZ" rel="me" title="GitHub"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
+</svg></a><a class="border"></a><a class="soc" href="https://www.linkedin.com/in/bill-zhang-890735209/" rel="me" title="Linkedin"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#linkedin" />
+</svg></a><a class="border"></a><a class="soc" href="mailto:billjz2@illinois.edu" rel="me" title="Email"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail" />
+</svg></a><a class="border"></a><a class="soc" href="documents/Bill_Zhang_Resume.pdf" rel="me" title="Resume"><svg class="feather">
+   <use href="/archie/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#file" />
+</svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2026  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+
+
+</div>
+    </body>
+</html>

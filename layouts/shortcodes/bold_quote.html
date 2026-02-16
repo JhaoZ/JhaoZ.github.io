@@ -1,0 +1,30 @@
+<div class="bold-quote-container">
+    <blockquote class="bold-quote">
+        {{ .Get 0 | markdownify }}
+    </blockquote>
+</div>
+
+<style>
+.bold-quote-container {
+    margin: 2.5rem 0;
+}
+
+.bold-quote {
+    font-size: 1.5rem;   /* Larger size to stand out */
+    font-weight: 800;   /* Extra bold */
+    line-height: 1.3;
+    border-left: 10px solid #ccc; /* Very thick accent border */
+    padding: 0.5rem 0 0.5rem 2rem;
+    margin: 0;
+    color: inherit;      /* Keeps your theme's text color */
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 600px) {
+    .bold-quote {
+        font-size: 1.25rem;
+        border-left-width: 6px;
+        padding-left: 1.2rem;
+    }
+}
+</style>
